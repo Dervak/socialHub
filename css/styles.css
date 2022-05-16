@@ -36,6 +36,13 @@
     .card:hover{
         transform: scale(1.05);
     }
+    .btn-primary{
+        border: 2px outset white;
+        transition: all 0.2s ease 0s;
+    }   
+    .btn-primary:active{
+        border: 2px inset white;
+    }
     /*      HEADER      */
     .top-page {
         grid-area: top-page;
