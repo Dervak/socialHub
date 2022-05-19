@@ -14,34 +14,40 @@
 </head>
 
 <body>
-    <div class="page-container">
-        <header class="top-page">
-            <div class="nav-logo"><a href="../index.html"><img src="../resources/images/logo.png" alt="logo"></a></div>
-            <nav>
-                <ul class="nav-links">
-                    <a href="../index.html">
-                        <li>Home</li>
-                    </a>
-                    <a href="./videos.html">
-                        <li>Videos</li>
-                    </a>
-                    <a href="./stream.html">
-                        <li>Stream</li>
-                    </a>
-                    <a href="delivery.html">
-                        <li>Delivery</li>
-                    </a>
-                    <a href="shop.html">
-                        <li>Shop</li>
-                    </a>
-                </ul>
-            </nav>
-            <div class="login">
-                <button class="log-in">Log In</button>
-                <button class="sign-up">Sign Up</button>
-                <button class="combined">Log In / Sign Up</button>
+        <nav class="navbar navbar-expand-lg navbar-bg">
+            <div class="container-fluid">
+                <a class="navbar-brand nav-logo" href="../index.html"><img src="../resources/images/logo.png"
+                        alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav nav-tabs ms-auto mb-2 mb-lg-0">
+                        <a class="nav-link me-2" href="../index.html">
+                            <li class="nav-item">Home</li>
+                        </a>
+                        <a class="nav-link mx-2" href="./videos.html">
+                            <li class="nav-item">Videos</li>
+                        </a>
+                        <a class="nav-link mx-2" href="./stream.html">
+                            <li class="nav-item">Streams</li>
+                        </a>
+                        <a class="nav-link mx-2" href="./delivery.html">
+                            <li class="nav-item">Delivery</li>
+                        </a>
+                        <a class="nav-link active ms-2" href="./shop.html">
+                            <li class="nav-item">Shop</li>
+                        </a>
+                    </ul>
+                    <div class="d-flex ms-auto">
+                        <a href="" class="btn btn-primary mx-1 px-3">Log In</a>
+                        <a href="./sign-in.html" class="btn btn-primary mx-1 px-3">Sing In</a>
+                    </div>
+                </div>
             </div>
-        </header>
+        </nav>
         <div class="mid-page">
             <main class="main">
                 <section class="title">
@@ -195,7 +201,6 @@
                         alt="Whatsapp"></a>
             </div>
         </footer>
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
