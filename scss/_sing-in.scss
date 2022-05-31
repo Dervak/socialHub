@@ -1,0 +1,61 @@
+/*      SING IN     */
+.sign-up-main {
+    background-image: url("../resources/images/bg-image.png");
+    object-fit: cover;
+    min-height: 80vh;
+
+    .form {
+        width: 80%;
+        margin: auto;
+
+        .form-label {
+            color: $white;
+        }
+
+        .form-select,
+        .form-control {
+            background-color: $black;
+            color: $white;
+            border: 0.125rem outset white;
+            background-image: url("../resources/images/down-arrow.svg");
+
+            &:focus {
+                color: $white;
+                border: 0.125rem inset $dark-red;
+                background-color: $black;
+                border-color: $dark-red;
+                box-shadow: none;
+                outline: none;
+            }
+
+            &::placeholder {
+                color: $dark-red;
+            }
+        }
+
+        .form-check-label {
+            color: $white;
+        }
+
+        .form-check-input {
+            border: 0.125rem outset white;
+
+            &:checked {
+                background-color: $dark-red;
+                border: 0.125rem inset $dark-red !important;
+            }
+
+            &:focus {
+                border-color: white;
+                outline: none;
+                box-shadow: none;
+            }
+        }
+
+    }
+
+    .jesus-bailando {
+        width: 100%;
+        text-align: center;
+    }
+}

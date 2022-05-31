@@ -1,0 +1,19 @@
+/*      VIDEOS      */
+.mid-page {
+    .main {
+        .videos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .video-grid {
+                @extend .grid-template;
+                grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+
+                iframe {
+                    @extend .iframe-template;
+                }
+            }
+        }
+    }
+}

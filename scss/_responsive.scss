@@ -1,0 +1,233 @@
+/*      RESPONSIVE      */
+@media screen and (max-width: 1300px) {
+
+    /*      MAIN        */
+    .mid-page {
+        .main-link {
+            width: 50%;
+        }
+
+        .aside {
+            .chat {
+                .chat-msg {
+                    flex-direction: column;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+
+    /*      FOOTER      */
+    .bot-page .social-media {
+        width: 100%;
+
+        a:hover {
+            transform: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    /*      MAIN       */
+    .mid-page {
+        display: flex;
+        flex-direction: column;
+
+        .main {
+            border-right: none;
+
+            h2 {
+                font-size: 2.5em;
+            }
+
+            .description {
+                p {
+                    width: 90%;
+                }
+
+                img {
+                    width: 90%;
+                }
+            }
+
+            .main-link {
+                width: 75%;
+            }
+
+            .yt,
+            .tw,
+            .ml,
+            .py {
+                padding: 9.375rem 6.25rem;
+            }
+
+            .videos {
+                .video-grid {
+                    iframe {
+                        padding: 0.625rem;
+                    }
+                }
+            }
+        }
+
+        .aside {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 770px) {
+
+    /*      MAIN       */
+    .mid-page .main .title marquee {
+        font-size: 4em;
+        padding: 20px 0;
+    }
+
+
+    /*      FOOTER      */
+    .bot-page .social-media a {
+        margin: 2px 1px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /*      MAIN       */
+    .mid-page .main {
+        .description {
+            p {
+                font-size: 1.3em;
+                margin: 10px;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .main-link {
+            width: 100%;
+        }
+
+        .yt:hover,
+        .tw:hover,
+        .ml:hover,
+        .py:hover {
+            transform: none;
+        }
+    }
+
+    /*      FOOTER      */
+    .bot-page {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "nav-links social-media";
+
+        .logo {
+            display: none;
+        }
+
+        .nav-links::before {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /*      MAIN       */
+    .mid-page .main {
+        h2 {
+            padding: 0.625rem;
+        }
+
+        .description {
+            p {
+                width: 100%;
+            }
+
+            hr {
+                width: 95%;
+            }
+
+            h4 {
+                margin-top: 3.125rem;
+            }
+        }
+
+        .yt,
+        .tw,
+        .ml,
+        .py {
+            padding: 4.6875rem 3.125rem;
+            font-size: 4rem;
+        }
+    }
+
+    /*      FOOTER      */
+    .bot-page {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "nav-links"
+            "social-media";
+
+        .nav-links {
+            &::after {
+                display: none;
+            }
+
+            li {
+                padding: 0.3125rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    /*      HEADER      */
+    .top-page {
+        display: flex;
+        flex-direction: column;
+
+        nav {
+            width: 100%;
+
+            .nav-links {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            li {
+                text-align: center;
+                margin: 0.3125rem;
+                border: 0.125rem outset white;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+        }
+    }
+
+    /*      MAIN       */
+    .mid-page .main {
+
+        .yt,
+        .tw,
+        .ml,
+        .py {
+            padding: 3.125rem;
+        }
+
+        .description {
+            h3 {
+                font-size: 2em;
+            }
+
+            h4 {
+                font-size: 1.5em;
+            }
+        }
+    }
+}

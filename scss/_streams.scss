@@ -1,0 +1,24 @@
+/*      STREAMS     */
+.mid-page {
+    .main {
+        .streams {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                color: $white;
+                font-weight: 600;
+            }
+
+            .stream-grid {
+                @extend .grid-template;
+                grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+
+                iframe {
+                    @extend .iframe-template;
+                }
+            }
+        }
+    }
+}
