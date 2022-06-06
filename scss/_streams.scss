@@ -12,8 +12,7 @@
             }
 
             .stream-grid {
-                @extend .grid-template;
-                grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+                @include grid(20rem);
 
                 iframe {
                     @extend .iframe-template;
