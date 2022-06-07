@@ -1,8 +1,23 @@
 /*      SING IN     */
 .sign-up-main {
+    display: flex;
+    flex-direction: column;
     background-image: url("../resources/images/bg-image.png");
     object-fit: cover;
     min-height: 80vh;
+    .title {
+        display: flex;
+        margin: 0 auto;
+
+        marquee {
+            font-weight: 600;
+            font-size: 5em;
+            color: $white;
+            text-align: center;
+            padding: 1.25rem;
+            animation: colorizar 5s linear 0s infinite;
+        }
+    }
 
     .form {
         width: 80%;

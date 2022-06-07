@@ -8,7 +8,7 @@
         top: 0;
         justify-content: flex-start;
         align-items: center;
-        background-color: $light-blue;
+        background-color: $black;
         min-height: 86vh;
         max-height: 100vh;
         transition: all 0.3s ease 0s;
@@ -21,7 +21,7 @@
             justify-content: flex-start;
             align-items: center;
             min-height: 86vh;
-            max-height: 100vh;
+            max-height: 100vh
         }
 
         h2 {
@@ -33,11 +33,11 @@
         }
 
         hr {
-            height: 5px;
+            height: 0.3125rem;
             width: 90%;
-            border: 1px inset white;
-            border-radius: 5px;
-            background-color: $red;
+            border: 0.0625rem inset white;
+            border-radius: 0.3125rem;
+            background-color: $green-blue;
         }
 
         .chat {
@@ -45,21 +45,27 @@
             height: auto;
             overflow: auto;
             justify-items: center;
+            margin-right: 0.3125rem;
 
             &::-webkit-scrollbar {
-                width: 5px;
+                box-sizing: content-box;
+                width: 0.4375rem;
             }
 
             &::-webkit-scrollbar-thumb {
-                background-color: $red;
-                border: 1px inset white;
-                border-radius: 5px;
+                background-color: #408da0b3;
+                border: 0.0625rem outset #ffffffb3;
+                border-radius: 0.3125rem;
+                &:hover{
+                    background-color: $green-blue;
+                    border-color: #ffffff;
+                }
             }
 
             .chat-msg {
                 display: flex;
-                padding: 15px;
-                margin: 5px;
+                padding: 0.9375rem;
+                margin: 0.3125rem;
 
                 span {
                     font-weight: 600;
@@ -67,7 +73,8 @@
                 }
 
                 p {
-                    margin-left: 5px;
+                    color: $white;
+                    margin-left: 0.3125rem;
                     font-size: 1em;
                 }
             }
@@ -78,19 +85,20 @@
             height: 15%;
             justify-content: center;
             width: 100%;
-            padding: 5px 0;
+            padding: 0.3125rem 0;
 
             textarea {
                 resize: none;
                 height: auto;
                 width: 75%;
-                background-color: $violet;
-                text-indent: 5px;
-                line-height: 25px;
+                background-color: $green-blue;
+                color: $white;
+                text-indent: 0.3125rem;
+                line-height: 1.5625rem;
                 font-size: 1em;
-                border: 2px inset white;
+                border: 0.125rem inset white;
                 border-right: none;
-                border-radius: 5px;
+                border-radius: 0.3125rem;
                 border-bottom-right-radius: 0;
                 border-top-right-radius: 0;
                 transition: all 0.2s ease 0s;
@@ -101,17 +109,19 @@
             }
 
             button {
-                background-color: $violet;
-                border: 2px inset white;
+                background-color: $green-blue;
+                color: $white;
+                border: 0.125rem inset white;
                 border-left: none;
-                border-radius: 5px;
+                border-radius: 0.3125rem;
                 border-bottom-left-radius: 0;
                 border-top-left-radius: 0;
-                padding: 0 5px;
+                padding: 0 0.3125rem;
                 transition: all 0.2s ease 0s;
 
                 &:active {
-                    background-color: $light-violet;
+                    background-color: $nav-bg;
+                    color: $red;
                 }
             }
         }

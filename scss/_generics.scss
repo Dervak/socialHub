@@ -3,7 +3,7 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: $font-type !important;
+    font-family: $font-type  !important;
 }
 
 h1 {
@@ -14,7 +14,7 @@ a {
     text-decoration: none;
 }
 
-.iframe-template{
+.iframe-template {
     aspect-ratio: 16/9;
     width: 100%;
     padding: 1.25rem;
@@ -22,6 +22,7 @@ a {
     background-color: $iframe-bg;
     border-radius: 0.3125rem;
 }
+
 .card {
     background-color: $black;
     color: $white;
@@ -43,22 +44,23 @@ a {
 
     &:hover {
         border: 0.0625rem outset white !important;
-        background-color: $blue !important;
-        color: $red !important;
+        background-color: $blue  !important;
+        color: $red  !important;
     }
 
     &:active {
         border: 0.0625rem inset white !important;
-        background-color: $blue !important;
-        color: $red !important;
+        background-color: $blue  !important;
+        color: $red  !important;
     }
 
     &:focus {
         border: 0.0625rem inset white !important;
-        color: $red !important;
+        color: $red  !important;
         box-shadow: none !important;
     }
 }
+
 /*      HEADER      */
 .nav-logo {
     img {
@@ -67,6 +69,7 @@ a {
         transition: all 0.3s ease 0s;
 
         &:hover {
+            filter: invert(53%) sepia(29%) saturate(1020%) hue-rotate(309deg) brightness(100%) contrast(100%);
             transform: scale(1.1);
         }
     }
@@ -83,9 +86,9 @@ a {
 
     &:hover {
         border: 0.0625rem outset white !important;
-        background-color: $blue !important;
+        background-color: $nav-bg  !important;
         background-image: url("../resources/images/menu-hover.png");
-        color: $red !important;
+        color: $red  !important;
     }
 
     &:active {
@@ -105,6 +108,7 @@ a {
 
 .nav-tabs {
     .nav-link {
+        text-align: center;
         border-top: 0.0625rem outset white !important;
         border-left: 0.0625rem outset white !important;
         border-right: 0.0625rem outset white !important;
@@ -114,12 +118,14 @@ a {
         font-weight: 600;
         color: $white;
         transition: all 0.2s ease 0s !important;
-        background-color: $green-blue !important;
+        background-color: $green-blue  !important;
+        margin-left: 0.3125rem;
+        margin-right: 0.3125rem;
 
         &:hover {
-            background-color: $blue !important;
+            background-color: $nav-bg  !important;
             border-bottom: none !important;
-            color: $red !important;
+            color: $red  !important;
         }
 
         &:active {
@@ -130,14 +136,15 @@ a {
     }
 
     .nav-link.active {
-        background-color: $nav-bg !important;
+        background-color: $nav-bg  !important;
         border-top: 0.0625rem inset white !important;
         border-left: 0.0625rem inset white !important;
         border-right: 0.0625rem inset white !important;
         border-bottom: none !important;
-        color: $r-accent !important;
+        color: $red  !important;
     }
 }
+
 /*      MAIN       */
 .mid-page {
     display: grid;
@@ -177,6 +184,7 @@ a {
         }
     }
 }
+
 /*      FOOTER        */
 .bot-page {
     display: grid;
@@ -202,6 +210,7 @@ a {
             &:hover {
                 transform: scale(1.1);
                 opacity: 1;
+                filter: invert(53%) sepia(29%) saturate(1020%) hue-rotate(309deg) brightness(100%) contrast(100%)
             }
         }
     }
@@ -243,7 +252,7 @@ a {
                 transition: all 0.3s ease 0s;
 
                 &:hover {
-                    color: $r-accent;
+                    color: $red;
                 }
             }
         }
@@ -270,7 +279,7 @@ a {
 
             &:hover {
                 transform: scale(1.2);
-                color: $r-accent;
+                color: $red;
             }
 
             img {
