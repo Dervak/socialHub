@@ -50,16 +50,22 @@
         }
 
         .main-link {
-            width: 35%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45%;
+            height: calc(45vw * 0.5);
             margin: 1.5625rem 0;
             padding: 6.25rem;
-            font-size: 5em;
-            color: $black;
-            text-align: center;
             border-radius: 0.3125rem;
-            font-weight: 600;
             border: 0.125rem inset white;
             transition: all 0.2s ease 0s;
+
+            .main-icon {
+                filter: invert(7%) sepia(9%) saturate(46%) hue-rotate(314deg) brightness(105%) contrast(81%);
+                border: none;
+                width: 50%;
+            }
         }
 
         @each $svc,

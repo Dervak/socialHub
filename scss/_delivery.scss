@@ -10,5 +10,22 @@
                 @include grid(15rem);
             }
         }
+
+        .map {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 0.9375rem;
+
+            iframe {
+                @extend .iframe-template;
+                max-height: calc(100vw * 0.3);
+                transition: all 0.2s ease;
+
+                &:hover {
+                    max-height: calc(100vw * 0.35);
+                }
+            }
+        }
     }
 }

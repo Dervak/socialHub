@@ -5,6 +5,7 @@
     background-image: url("../resources/images/bg-image.png");
     object-fit: cover;
     min-height: 80vh;
+
     .title {
         display: flex;
         margin: 0 auto;
@@ -57,7 +58,7 @@
 
             &:checked {
                 background-color: $dark-red;
-                border: 0.125rem inset $dark-red !important;
+                border: 0.125rem inset $dark-red  !important;
             }
 
             &:focus {

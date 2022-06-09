@@ -1,7 +1,7 @@
 @mixin grid ($min-width) {
     display: grid;
     gap: 1rem;
-    grid-auto-rows: auto;
+    grid-auto-rows: 1fr;
     grid-template-columns: repeat(auto-fill, minmax($min-width, 1fr));
     margin-bottom: 1.5625rem;
     width: 95%;

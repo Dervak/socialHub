@@ -18,7 +18,7 @@ a {
   text-decoration: none;
 }
 
-.iframe-template, .mid-page .main .streams .stream-grid iframe, .mid-page .main .videos .video-grid iframe {
+.iframe-template, .mid-page .main .map iframe, .mid-page .main .streams .stream-grid iframe, .mid-page .main .videos .video-grid iframe {
   aspect-ratio: 16/9;
   width: 100%;
   padding: 1.25rem;
@@ -30,6 +30,8 @@ a {
 .card {
   background-color: #282828;
   color: #f0ffff;
+  width: 95%;
+  height: 95%;
   border: 0.125rem outset white;
   margin: 0.9375rem 0.625rem;
   transition: all 0.2s ease 0s;
@@ -421,16 +423,21 @@ a {
   height: 0.1875rem;
 }
 .mid-page .main .main-link {
-  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  height: 22.5vw;
   margin: 1.5625rem 0;
   padding: 6.25rem;
-  font-size: 5em;
-  color: #282828;
-  text-align: center;
   border-radius: 0.3125rem;
-  font-weight: 600;
   border: 0.125rem inset white;
   transition: all 0.2s ease 0s;
+}
+.mid-page .main .main-link .main-icon {
+  filter: invert(7%) sepia(9%) saturate(46%) hue-rotate(314deg) brightness(105%) contrast(81%);
+  border: none;
+  width: 50%;
 }
 .mid-page .main .yt {
   background-color: #ff0000;
@@ -478,7 +485,7 @@ a {
 .mid-page .main .videos .video-grid {
   display: grid;
   gap: 1rem;
-  grid-auto-rows: auto;
+  grid-auto-rows: 1fr;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   margin-bottom: 1.5625rem;
   width: 95%;
@@ -496,7 +503,7 @@ a {
 .mid-page .main .streams .stream-grid {
   display: grid;
   gap: 1rem;
-  grid-auto-rows: auto;
+  grid-auto-rows: 1fr;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   margin-bottom: 1.5625rem;
   width: 95%;
@@ -510,10 +517,23 @@ a {
 .mid-page .main .delivery .delivery-grid {
   display: grid;
   gap: 1rem;
-  grid-auto-rows: auto;
+  grid-auto-rows: 1fr;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   margin-bottom: 1.5625rem;
   width: 95%;
+}
+.mid-page .main .map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0.9375rem;
+}
+.mid-page .main .map iframe {
+  max-height: 30vw;
+  transition: all 0.2s ease;
+}
+.mid-page .main .map iframe:hover {
+  max-height: 35vw;
 }
 
 /*      SHOP       */
@@ -525,7 +545,7 @@ a {
 .mid-page .main .shop .shop-grid {
   display: grid;
   gap: 1rem;
-  grid-auto-rows: auto;
+  grid-auto-rows: 1fr;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   margin-bottom: 1.5625rem;
   width: 95%;
@@ -612,9 +632,6 @@ a {
   .mid-page {
     grid-template-columns: 80% 20%;
   }
-  .mid-page .main-link {
-    width: 50%;
-  }
 
   /*      FOOTER      */
   .bot-page .social-media {
@@ -625,6 +642,14 @@ a {
   }
 }
 @media screen and (max-width: 1100px) {
+  /*      HEADER      */
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
   /*      MAIN       */
   .mid-page {
     display: flex;
@@ -644,6 +669,7 @@ a {
   }
   .mid-page .main .main-link {
     width: 75%;
+    height: 45vw;
   }
   .mid-page .main .yt,
 .mid-page .main .tw,
@@ -684,6 +710,12 @@ a {
     font-size: 4em;
     padding: 20px 0;
   }
+  .mid-page .main .map iframe {
+    max-height: 50vw;
+  }
+  .mid-page .main .map iframe:hover {
+    max-height: 50vw;
+  }
 
   /*      FOOTER      */
   .bot-page .social-media a {
@@ -701,6 +733,7 @@ a {
   }
   .mid-page .main .main-link {
     width: 100%;
+    height: 60vw;
   }
   .mid-page .main .yt:hover,
 .mid-page .main .tw:hover,
@@ -740,7 +773,6 @@ a {
 .mid-page .main .ml,
 .mid-page .main .py {
     padding: 4.6875rem 3.125rem;
-    font-size: 4rem;
   }
 
   /*      FOOTER      */

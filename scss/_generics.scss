@@ -26,6 +26,8 @@ a {
 .card {
     background-color: $black;
     color: $white;
+    width: 95%;
+    height: 95%;
     border: 0.125rem outset white;
     margin: 0.9375rem 0.625rem;
     transition: all 0.2s ease 0s;

@@ -4,10 +4,9 @@
     /*      MAIN        */
     .mid-page {
         grid-template-columns: 80% 20%;
-        .main-link {
-            width: 50%;
-        }
+
     }
+
     /*      FOOTER      */
     .bot-page .social-media {
         width: 100%;
@@ -19,6 +18,13 @@
 }
 
 @media screen and (max-width: 1100px) {
+
+    /*      HEADER      */
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
 
     /*      MAIN       */
     .mid-page {
@@ -44,6 +50,7 @@
 
             .main-link {
                 width: 75%;
+                height: calc(75vw * 0.6);
             }
 
             .yt,
@@ -67,34 +74,57 @@
         }
     }
 }
-@media screen and (max-width: 992px){
+
+@media screen and (max-width: 992px) {
+
     /*      HEADER      */
     .nav-tabs {
         border: none;
+
         .nav-link {
             border: 0.0625rem outset white !important;
             border-radius: 0px;
             margin: 5px 0;
-    
-            &:hover{
-                border: 0.0625rem outset white !important;;
+
+            &:hover {
+                border: 0.0625rem outset white !important;
+                ;
             }
+
             &:active {
                 border-style: inset !important;
             }
         }
-    
+
         .nav-link.active {
             border: 0.0625rem inset white !important;
         }
     }
 }
+
 @media screen and (max-width: 770px) {
 
     /*      MAIN       */
-    .mid-page .main .title marquee {
-        font-size: 4em;
-        padding: 20px 0;
+    .mid-page {
+        .main {
+            .title {
+                marquee {
+                    font-size: 4em;
+                    padding: 20px 0;
+                }
+            }
+
+            .map {
+                iframe {
+                    max-height: calc(100vw * 0.5);
+
+                    &:hover {
+                        max-height: calc(100vw * 0.5);
+                    }
+
+                }
+            }
+        }
     }
 
 
@@ -121,6 +151,7 @@
 
         .main-link {
             width: 100%;
+            height: calc(100vw * 0.6);
         }
 
         .yt:hover,
@@ -173,7 +204,6 @@
         .ml,
         .py {
             padding: 4.6875rem 3.125rem;
-            font-size: 4rem;
         }
     }
 
