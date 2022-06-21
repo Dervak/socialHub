@@ -64,88 +64,97 @@ a {
 }
 
 /*      HEADER      */
-.nav-logo {
-    img {
-        height: 3.125rem;
-        width: 3.125rem;
-        transition: all 0.3s ease 0s;
+header {
+    .navbar {
+        border-bottom: 0.0625rem inset white;
+        background-color: $nav-bg;
 
-        &:hover {
-            filter: invert(53%) sepia(29%) saturate(1020%) hue-rotate(309deg) brightness(100%) contrast(100%);
-            transform: scale(1.1);
+        .nav-logo {
+            img {
+                height: 3.125rem;
+                width: 3.125rem;
+                transition: all 0.3s ease 0s;
+
+                &:hover {
+                    filter: invert(53%) sepia(29%) saturate(1020%) hue-rotate(309deg) brightness(100%) contrast(100%);
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .navbar-toggler {
+            background-color: $green-blue;
+            border: 1px outset white;
+            background-image: url("../resources/images/menu.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 1.875rem 1.875rem;
+            transition: all 0.2s ease 0s;
+
+            &:hover {
+                border: 0.0625rem outset white !important;
+                background-color: $nav-bg  !important;
+                background-image: url("../resources/images/menu-hover.png");
+                color: $red  !important;
+            }
+
+            &:active {
+                border: 0.0625rem inset white !important;
+            }
+
+            &:focus {
+                box-shadow: none !important;
+            }
+        }
+
+        .nav-tabs {
+            .nav-link {
+                text-align: center;
+                border-top: 0.0625rem outset white !important;
+                border-left: 0.0625rem outset white !important;
+                border-right: 0.0625rem outset white !important;
+                border-bottom: 0.0625rem solid #dee2e6;
+                border-top-left-radius: 0.625rem;
+                border-top-right-radius: 0.625rem;
+                font-weight: 600;
+                color: $white;
+                transition: all 0.2s ease 0s !important;
+                background-color: $green-blue  !important;
+                margin-left: 0.3125rem;
+                margin-right: 0.3125rem;
+
+                &:hover {
+                    background-color: $nav-bg  !important;
+                    border-bottom: none !important;
+                    color: $red  !important;
+                }
+
+                &:active {
+                    border-top: 0.0625rem inset white !important;
+                    border-left: 0.0625rem inset white !important;
+                    border-right: 0.0625rem inset white !important;
+                }
+            }
+
+            .nav-link.active {
+                background-color: $nav-bg  !important;
+                border-top: 0.0625rem inset white !important;
+                border-left: 0.0625rem inset white !important;
+                border-right: 0.0625rem inset white !important;
+                border-bottom: none !important;
+                color: $red  !important;
+            }
         }
     }
 }
 
-.navbar-toggler {
-    background-color: $green-blue;
-    border: 1px outset white;
-    background-image: url("../resources/images/menu.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 1.875rem 1.875rem;
-    transition: all 0.2s ease 0s;
-
-    &:hover {
-        border: 0.0625rem outset white !important;
-        background-color: $nav-bg  !important;
-        background-image: url("../resources/images/menu-hover.png");
-        color: $red  !important;
-    }
-
-    &:active {
-        border: 0.0625rem inset white !important;
-    }
-
-    &:focus {
-        box-shadow: none !important;
-    }
-}
-
-.navbar {
-    border-bottom: 0.0625rem inset white;
-    background-color: $nav-bg;
-}
 
 
-.nav-tabs {
-    .nav-link {
-        text-align: center;
-        border-top: 0.0625rem outset white !important;
-        border-left: 0.0625rem outset white !important;
-        border-right: 0.0625rem outset white !important;
-        border-bottom: 0.0625rem solid #dee2e6;
-        border-top-left-radius: 0.625rem;
-        border-top-right-radius: 0.625rem;
-        font-weight: 600;
-        color: $white;
-        transition: all 0.2s ease 0s !important;
-        background-color: $green-blue  !important;
-        margin-left: 0.3125rem;
-        margin-right: 0.3125rem;
 
-        &:hover {
-            background-color: $nav-bg  !important;
-            border-bottom: none !important;
-            color: $red  !important;
-        }
 
-        &:active {
-            border-top: 0.0625rem inset white !important;
-            border-left: 0.0625rem inset white !important;
-            border-right: 0.0625rem inset white !important;
-        }
-    }
 
-    .nav-link.active {
-        background-color: $nav-bg  !important;
-        border-top: 0.0625rem inset white !important;
-        border-left: 0.0625rem inset white !important;
-        border-right: 0.0625rem inset white !important;
-        border-bottom: none !important;
-        color: $red  !important;
-    }
-}
+
+
 
 /*      MAIN       */
 .mid-page {

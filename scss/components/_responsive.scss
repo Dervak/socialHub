@@ -137,28 +137,30 @@
 @media screen and (max-width: 600px) {
 
     /*      MAIN       */
-    .mid-page .main {
-        .description {
-            p {
-                font-size: 1.3em;
-                margin: 10px;
+    .mid-page {
+        .main {
+            .description {
+                p {
+                    font-size: 1.3em;
+                    margin: 10px;
+                }
+
+                img {
+                    width: 100%;
+                }
             }
 
-            img {
+            .main-link {
                 width: 100%;
+                height: calc(100vw * 0.6);
             }
-        }
 
-        .main-link {
-            width: 100%;
-            height: calc(100vw * 0.6);
-        }
-
-        .yt:hover,
-        .tw:hover,
-        .ml:hover,
-        .py:hover {
-            transform: none;
+            .yt:hover,
+            .tw:hover,
+            .ml:hover,
+            .py:hover {
+                transform: none;
+            }
         }
     }
 
@@ -180,30 +182,32 @@
 @media screen and (max-width: 480px) {
 
     /*      MAIN       */
-    .mid-page .main {
-        h2 {
-            padding: 0.625rem;
-        }
-
-        .description {
-            p {
-                width: 100%;
+    .mid-page {
+        .main {
+            h2 {
+                padding: 0.625rem;
             }
 
-            hr {
-                width: 95%;
+            .description {
+                p {
+                    width: 100%;
+                }
+
+                hr {
+                    width: 95%;
+                }
+
+                h4 {
+                    margin-top: 3.125rem;
+                }
             }
 
-            h4 {
-                margin-top: 3.125rem;
+            .yt,
+            .tw,
+            .ml,
+            .py {
+                padding: 4.6875rem 3.125rem;
             }
-        }
-
-        .yt,
-        .tw,
-        .ml,
-        .py {
-            padding: 4.6875rem 3.125rem;
         }
     }
 
@@ -253,23 +257,26 @@
     }
 
     /*      MAIN       */
-    .mid-page .main {
+    .mid-page {
+        .main {
 
-        .yt,
-        .tw,
-        .ml,
-        .py {
-            padding: 3.125rem;
-        }
-
-        .description {
-            h3 {
-                font-size: 2em;
+            .yt,
+            .tw,
+            .ml,
+            .py {
+                padding: 3.125rem;
             }
 
-            h4 {
-                font-size: 1.5em;
+            .description {
+                h3 {
+                    font-size: 2em;
+                }
+
+                h4 {
+                    font-size: 1.5em;
+                }
             }
         }
     }
+
 }
